@@ -6,175 +6,90 @@
 
     <style>
 
+
+body {
+
+    font-family: 'Noto Sans KR';
+
+background-image: url('background/연습실.png');
+min-height: 100vh; 
+background-size: cover; 
+background-position: center center;
+
+
+}
+
+.button1 {
+   
+   font-family: 'Noto Sans KR';
+
+   position: absolute; 
+   left: 10%;
+
+font-size: 20px;
+
+
+display: inline-block; /* 버튼 크기 지정 가능하게 함 */
+padding: 10px 40px;
+background-color: rgb(240, 106, 128); /* 배경색 */
+color: white; /* 글자색 */
+text-decoration: none; /* 밑줄 제거 */
+border-radius: 5px; /* 모서리 둥글게 */
+border: none; /* 테두리 제거 */
+cursor: pointer; /* 마우스 커서 변경 */
+text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.button1_2 {
+   
+   font-family: 'Noto Sans KR';
+
+   position: absolute; 
+   left: 50%;
+
+font-size: 20px;
+
+
+display: inline-block; /* 버튼 크기 지정 가능하게 함 */
+padding: 10px 40px;
+background-color: rgb(240, 106, 128); /* 배경색 */
+color: white; /* 글자색 */
+text-decoration: none; /* 밑줄 제거 */
+border-radius: 5px; /* 모서리 둥글게 */
+border: none; /* 테두리 제거 */
+cursor: pointer; /* 마우스 커서 변경 */
+text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+
         .X1 {
             font-weight: bold;
-            font-size: 30px;
+            font-size: 20px;
         }
         
         .X2 {
             font-weight: bold;
-            font-size: 30px;
+            font-size: 20px;
             color: red;
         }
 
 
         .text p {
-            opacity: 0;
+          
             animation: fadein 1.5s forwards;
+            text-align: center;
         }
         .text a {
             
             font-weight: bold;
             color: pink;
-            opacity: 0; 
+   
             animation: fadein 1.5s forwards; 
             display: block;
             text-decoration: none; 
+            text-align: center;
         }
 
-        .text *:nth-child(1) {
-                animation-delay: 2s;
-            }
-         .text *:nth-child(2) {
-                animation-delay: 5s;
-            }
-         .text *:nth-child(3) {
-                animation-delay: 8s;
-            }
-        .text *:nth-child(4) {
-                animation-delay: 12s;
-            }
-        .text *:nth-child(5) {
-                animation-delay: 16s;
-            }
-
-
-
-        .text *:nth-child(6) {
-                animation-delay:20s;
-            }
-        .text *:nth-child(7) {
-                animation-delay: 23s;
-            }
-        .text *:nth-child(8) {
-                animation-delay: 26s;
-            }
-        .text *:nth-child(9) {
-                animation-delay: 29s;
-            }
-        .text *:nth-child(10) {
-                animation-delay: 32s;
-            }
-
-
-        .text *:nth-child(11) {
-            animation-delay:36s
-        }
-        .text *:nth-child(12) {
-            animation-delay:39s
-        }    
-        .text *:nth-child(13) {
-            animation-delay:42s
-        }       
-        .text *:nth-child(14) {
-            animation-delay:45s
-        }  
-        .text *:nth-child(15) { 
-            animation-delay:48s
-        }    
-
-
-        .text *:nth-child(16) {
-            animation-delay:51s
-        }   
-        .text *:nth-child(17) {
-            animation-delay:54s
-        }   
-        .text *:nth-child(18) {
-            animation-delay:56s
-        }       
-        .text *:nth-child(19) {
-            animation-delay:57s
-        }  
-        .text *:nth-child(20) { 
-            animation-delay:60s 
-        }    
-
-
-
-        .text *:nth-child(21) {
-            animation-delay:63s
-        }   
-        .text *:nth-child(22) {
-            animation-delay:66s
-        }   
-
-        .text *:nth-child(23) {
-            animation-delay:69s
-        }   
-        .text *:nth-child(24) {
-            animation-delay:73s
-        }   
-        .text *:nth-child(25) {
-            animation-delay:76s
-        }   
-
-
-
-
-        .text *:nth-child(26) {
-            animation-delay:80s
-        }   
-        .text *:nth-child(27) {
-            animation-delay:83s
-        }   
-        .text *:nth-child(28) {
-            animation-delay:86s
-        }   
-        .text *:nth-child(29) {
-            animation-delay:89s
-        }   
-        .text *:nth-child(30) {
-            animation-delay:91s
-        }   
-
-
-
-        .text *:nth-child(31) {
-            animation-delay:94s
-        }   
-        .text *:nth-child(32) {
-            animation-delay:97s
-        }   
-        .text *:nth-child(33) {
-            animation-delay:100s
-        }   
-        .text *:nth-child(34) {
-            animation-delay:102s
-        }   
-        .text *:nth-child(35) {
-            animation-delay:104s
-        }   
-
-
-
-        .text *:nth-child(36) {
-            animation-delay:107s
-        }   
-        .text *:nth-child(37) {
-            animation-delay:109s
-        }  
-    
-    
-    
-            @keyframes fadein {
-                from{ opacity:0;}
-                to{opacity:1;}
-            }
-    
-    
-        
-    
     </style>
         
     
@@ -203,12 +118,6 @@
     <p>제일 먼저 호명되었습니다.</p>
 
     <p class ="X2">--데뷔성공--</p>
-    <p>-당신은 "센터" 포지션으로 데뷔에 성공합니다</p>
-    <p>-휴~ 괜히 마음 졸였잖아?</p>
-    <p>-38명중 외모1등인데... 내가 아니면 누가 데뷔해?</p>
-
-    <p>이후 5명의 연습생이 차례차례 호명되고...</p>
-
 
 
 
@@ -233,10 +142,12 @@
     <p>감독님의 짜증섞인 지적에 촬영장  분위기가 얼어붙습니다. </p>
     <p>어떡하지...?</p>
 
-    <a href = "끼부리기.html">1. 끼부리기</a>
-    <p>-조금 민망하지만... 매력발산!!</p>
-    <a href = "시킨대로하기.html">2.시킨대로하기</a>
-    <p>-민망한걸 어떡하라고 ㅠㅠ</p>
+    <a class="button1" href = "끼부리기.html">1. 끼부리기<br>
+    
+    <p >-조금 민망하지만... 매력발산!!</p></a>
+    <a class="button1_2" href = "시킨대로하기.html">2.시킨대로하기<br>
+    <p>-민망한걸 어떡하라고 ㅠㅠ</p></a>
+
 
 
     </div>

@@ -4,6 +4,38 @@
 
 <style>
 
+    body {
+
+        font-family: 'Noto Sans KR';
+        background-image: url('background/방.png');
+        min-height: 100vh; 
+        background-size: cover; 
+        background-position: center center;
+
+
+    }
+
+    .button {
+   
+        font-family: 'Noto Sans KR';
+
+        position: absolute; 
+    top: 50%;
+    left: 38%;
+    font-size: 30px;
+
+
+    display: inline-block; /* 버튼 크기 지정 가능하게 함 */
+    padding: 20px 50px;
+    background-color: rgb(240, 106, 128); /* 배경색 */
+    color: white; /* 글자색 */
+    text-decoration: none; /* 밑줄 제거 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    border: none; /* 테두리 제거 */
+    cursor: pointer; /* 마우스 커서 변경 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
     .X {
         font-weight: bold;
         font-size: 30px;
@@ -12,6 +44,7 @@
     .text p ,.text a{
         opacity: 0;
         animation: fadein 1.5s forwards;
+        text-align: center;
         
 
     }
@@ -32,60 +65,9 @@
             animation-delay: 12s;
         }
 
-
-
-
     .text *:nth-child(6) {
             animation-delay:15s;
         }
-    .text *:nth-child(7) {
-            animation-delay: 18s;
-        }
-    .text *:nth-child(8) {
-            animation-delay: 22s;
-        }
-    .text *:nth-child(9) {
-            animation-delay: 26s;
-        }
-    .text *:nth-child(10) {
-            animation-delay: 30s;
-        }
-
-
-
-
-
-        
-    .text *:nth-child(11) {
-        animation-delay:33s
-    }
-
-    .text *:nth-child(12) {
-        animation-delay:34s
-
-    }    
-    
-    .text *:nth-child(13) {
-        animation-delay:37s
-
-    }       
-
-    .text *:nth-child(14) {
-        animation-delay:39s
-
-    }  
-    
-    .text *:nth-child(15) {
-        animation-delay:41s
-
-    }    
-
-    .text *:nth-child(16) {
-        animation-delay:11s
-
-    }   
-
-
 
         @keyframes fadein {
         from{ 
@@ -105,19 +87,23 @@
 <body>
 
 <div class="text">
-    <p> 17살… </p>
-    <p>어떻게 보면 한 없이 어리지만, 또 어떻게 보면 알만큼 다 아는 나이.</p>
+    <p> 17살… <br>
+    어떻게 보면 한 없이 어리지만, 또 어떻게 보면 알만큼 다 아는 나이.</p>
+
     <p>대한민국 서울에 사는 평범한 남고딩이지만… 
-    <p>내 꿈만큼은 전혀 평범하지 않다.</p>
+    <br>내 꿈만큼은 전혀 평범하지 않다.</p>
+
     <p>초등학생 때부터 단 한 순간도 변치 않은 나의 꿈은 바로</p>
+
     <p><b>아이돌…!!</b></p>
-    <p>11살 잼민이 시절… 내가 좋아하던 예지가 워X원을 좋아하는 것을 알게되고, </p>
-    <p>예지의 최애인 이X휘가 되기 위해 밤낮으로 노력하다보니 자연스럽게 아이돌의 꿈을 갖게 되었다. </p>
-    <p>중3때까지 열심히 공부해서 부모님이 원하시는 고등학교도 왔겠다! 이젠 슬슬 내 꿈을 위한 노력을 할 때가 된 것 같다…</p>
+
+    <p>11살 잼민이 시절… 내가 좋아하던 예지가 워X원을 좋아하는 것을 알게되고, <br>
+    자연스럽게 아이돌의 꿈을 갖게 되었다. <br>
+    중3때까지 열심히 공부해서 부모님이 원하시는 고등학교도 왔겠다! 이젠 슬슬 내 꿈을 위한 노력을 할 때가 된 것 같다…</p>
     <p> 그 날 저녁... 샤워를 마치고 거울을 본다 </p>
 
    
-  <a href="존잘.html"> (시작하기)</a>
+  <a class="button" href="존잘.html"> 시작하기</a>
 
 
 </div>

@@ -1,0 +1,72 @@
+<html>
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+
+
+<style>
+
+body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* 콘텐츠를 상단에 배치 */
+        }
+
+
+ #button {
+
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+
+    }
+
+
+
+.apple {
+        font-size: 100px;
+            position: absolute;
+            top: 0; /* 화면 맨 위에서 시작 */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+            /* 애니메이션 이름과 지속 시간을 여기서 정의하지 않고 JS에서 동적으로 설정합니다. */
+        }
+
+@keyframes fall-and-fade {
+            0% {
+                top: 0;
+                opacity: 1;
+                transform: translate(-50%, 0) scale(1);
+            }
+            70% {
+                top: calc(100vh - 50px); /* 화면 바닥 (50px는 대략적인 글자 높이) */
+                opacity: 1;
+                transform: translate(-50%, 0) scale(1);
+            }
+            100% {
+                top: calc(100vh - 50px);
+                opacity: 0; /* 바닥에 닿은 후 사라짐 */
+                transform: translate(-50%, 0) scale(0.9);
+            }
+        }
+
+</style>
+
+
+<body>
+
+   
+    <button id="button">drop</button>
+
+
+    <script src ="하늘에서 떨어지기.js"></script>
+  
+    <br><br><br><a href ="/index.html">List로 돌아가기</a>
+
+    
+    </body>
+
+
+</html>

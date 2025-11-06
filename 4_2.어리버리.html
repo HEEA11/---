@@ -55,8 +55,9 @@ text-align: center; /* 텍스트 가운데 정렬 */
 
    position: absolute; 
 
-left: 38%;
-top: 90%;
+left: 50%;
+top: 70%;
+transform: translate(-50%, -50%);
 font-size: 20px;
 
 padding: 20px 50px;
@@ -85,9 +86,7 @@ text-align: center; /* 텍스트 가운데 정렬 */
     position:absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0;
-        animation: fadein 1.5s forwards;
-        animation-delay:  5s;;
+
 
         cursor: pointer;
 
@@ -109,27 +108,19 @@ text-align: center; /* 텍스트 가운데 정렬 */
     
     
           
-        .text p {
-            border-radius: 5px;
-        opacity: 0;
-        animation: fadein 1.5s forwards;
-        text-align: center;
-        font-size: 30px;
+.text p ,.text a{
+       
+       border-radius: 5px;
+       opacity: 0;
+       animation: fadein 1.5s forwards;
+       text-align: center;
+       font-size: 30px;
 
 
-        
-        }
-        .text a {
-            
-            border-radius: 5px;
-        opacity: 0;
-        animation: fadein 1.5s forwards;
-        text-align: center;
-        font-size: 30px;
+       
 
-
-        
-        }
+   }
+      
         
         
                 @keyframes fadein {
